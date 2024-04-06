@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bài Tập Nâng Cao - Bảng HTML Phức Tạp</title>
+</head>
+<body>
+
+<h1>Bảng Điểm Học Sinh</h1>
+<p>Thực hiện các nhiệm vụ sau:</p>
+<ul>
+  <li>Định dạng viền cho toàn bộ bảng.</li>
+  <li>Thêm hiệu ứng khi rê chuột qua các ô.</li>
+  <li>Sử dụng `colspan` và `rowspan` để thể hiện thông tin hiệu quả hơn.</li>
+  <li>Đánh dấu ô điểm cao nhất trong mỗi môn.</li>
+</ul>
+
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <th style="border: 1px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; color: black;">Tên Học Sinh</th>
+    <th style="border: 1px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; color: black;">Toán</th>
+    <th style="border: 1px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; color: black;">Khoa học</th>
+    <th colspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; color: black;">Ngôn Ngữ</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Annie</td>
+    <td style="border: 2px solid #ff8800; padding: 8px; text-align: center; background-color: #ffc107;">9.5</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8.0</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">7.5</td>
+    <td rowspan="2" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Nhận xét giáo viên</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Bob</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">7.0</td>
+    <td style="border: 2px solid #ff8800; padding: 8px; text-align: center; background-color: #ffc107;">8.5</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">6.5</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">Charlie</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">8.0</td>
+    <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">7.0</td>
+    <td style="border: 2px solid #ff8800; padding: 8px; text-align: center; background-color: #ffc107;">8.5</td>
+    <td rowspan="3" style="border: 1px solid #ddd; padding: 8px; text-align: center;">Cần cải thiện kỹ năng viết</td>
+  </tr>
+  <!-- Học sinh có thể tiếp tục thêm hàng và ô vào đây -->
+</table>
+
+<script>
+  // JavaScript để thêm hi
